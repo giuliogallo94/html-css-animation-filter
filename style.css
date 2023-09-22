@@ -176,6 +176,7 @@
     text-align: center;
     text-decoration: none;
 }
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
@@ -184,6 +185,7 @@
     width: 60px;
     height: 20px;
 }
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -192,3 +194,135 @@
     width: 60px;
     height: 20px;
 }
+
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: top 2s linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: bottom 2s linear;
+}
+
+@keyframes top {
+    25% {
+        left: 45%;
+    }
+
+    50% {
+        left: calc(100% - 60px);
+    }
+
+    75% {
+        left: 45%;
+    }
+
+    100% {
+        left: 10%;
+    }
+  }
+
+@keyframes bottom {
+    25% {
+        right: 50%;
+    }
+
+    50% {
+        right: calc(100% - 60px);
+    }
+
+    75% {
+        right: 50%;
+    }
+
+    100% {
+        right: 20%;
+    }
+  }
+
+  /* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation: top-complete 3s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: bottom-complete 5s linear;
+}
+/*
+@keyframes top-complete  {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+} */
+
+
+@keyframes top-complete {
+    15% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+
+    25% {
+    left: calc(100% - 30px);
+        top: calc(100% - 10px);
+    }
+
+    50% {
+        left: calc(100% - 30px);
+        top: calc(100% - 10px);
+    }
+
+    75% {
+        right: calc(100% - 30px);
+        top: calc(100% -10px)
+    }
+
+    90% {
+        right: calc(100% - 30px);
+        bottom: calc(100% - 10px);
+    }
+
+    100% {
+        left: 10%;
+        right: -10px;
+    }
+  }
+
+@keyframes bottom-complete {
+    25% {
+        right: 50%;
+    }
+
+    50% {
+        right: calc(100% - 60px);
+    }
+
+    75% {
+        right: 50%;
+    }
+
+    100% {
+        right: 20%;
+    }
+  }
