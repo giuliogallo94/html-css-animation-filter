@@ -248,36 +248,9 @@
 .ex-13-button:hover .ex-13-bottom-white {
     animation: bottom-complete 5s linear;
 }
-/*
-@keyframes top-complete  {
-    0% {
-        left: 10%;
-        top: -10px;
-    }
-    30% {
-        left: calc(100% - 30px);
-        top: -10px;
-    }
-    45% {
-        left: calc(100% - 30px);
-        top: 100%;
-    }
-    75% {
-        left: 0;
-        top: 100%;
-    }
-    90% {
-        left: -15px;
-        top: -10px;
-    }
-    100% {
-        left: 10%;
-        top: -10px;
-    }
-} */
-
-
+/* 
 @keyframes top-complete {
+
     15% {
         left: calc(100% - 30px);
         top: 100%;
@@ -325,4 +298,4 @@
     100% {
         right: 20%;
     }
-  }
+  } */
